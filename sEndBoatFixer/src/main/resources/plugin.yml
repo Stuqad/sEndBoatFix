@@ -1,0 +1,6 @@
+name: sEndBoatFixer
+version: '${project.version}'
+main: uk.stuqad.sendboatfixer.Main
+api-version: '1.16'
+authors: [Stuqad]
+description: This plugin is fixing boats in end
