@@ -1,13 +1,15 @@
 package uk.stuqad.sendboatfixer;
 
-import org.bukkit.event.Listener;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-import uk.stuqad.sendboatfixer.Listeners.OnEntityTeleportEvent;
+import uk.stuqad.sendboatfixer.listeners.TeleportListener;
 
 public final class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        Bukkit.getPluginManager().registerEvents(new TeleportListener(), this);
+
         System.out.println("==============================");
         System.out.println("[sEndBoatFixer] Plugin is on");
         System.out.println("==============================");
